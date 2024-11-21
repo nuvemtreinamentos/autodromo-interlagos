@@ -1,0 +1,77 @@
+/* Geral */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+    background: #2c3e50;
+    color: white;
+    width: 250px;
+    padding: 10px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 10px 0;
+    cursor: pointer;
+    text-transform: capitalize;
+    border-bottom: 1px solid #34495e;
+}
+
+.menu li:hover {
+    background: #34495e;
+}
+
+/* Botão de Toggle */
+.menu-btn {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Conteúdo */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.align-right {
+    float: right;
+    margin-left: 20px;
+}
+
+.align-left {
+    float: left;
+    margin-right: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+}

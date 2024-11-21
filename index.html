@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Menu Lateral -->
+        <aside class="sidebar">
+            <div class="menu-header">
+                <!-- <h2></h2> -->
+                <button id="toggle-menu" class="menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
+            <ul class="menu">
+                <li>
+                    <button onclick="setLanguage('pt')" title="Português" width="60px" height="80px">
+                        <img src="img/brasil.svg" alt="Português" width="60px" height="80px">
+                    </button>
+                </li>
+                <li>
+                    <button onclick="setLanguage('es')" title="Español">
+                        <img src="img/argentina.svg" alt="Español" width="60px" height="80px">
+                    </button>
+                </li>
+                <li>
+                    <button onclick="setLanguage('en')" title="English">
+                        <img src="img/usa.svg" alt="English" width="60px" height="80px">
+                    </button>
+                </li>
+                <li>Como Chegar</li>
+                <li>Onde se Alimentar</li>
+                <li>Onde se Hospedar</li>
+                <li>Zonas de Risco</li>
+                <li>Telefones Úteis</li>
+            </ul>
+        </aside>
+
+        <!-- Conteúdo Principal -->
+        <main class="content">
+            <section id="como-chegar">
+                <h1>Como Chegar</h1>
+                <article>
+                    <p><strong>Opção 1 (preferível):</strong> De trem através da estação Autódromo.</p>
+                    <img src="img/mapa_trem.jpg" alt="Mapa da estação" class="align-center">
+                </article>
+                <article>
+                    <p><strong>Opção 2:</strong> De carro até a estação Jurubatura, e de trem até a estação Autódromo.</p>
+                    <img src="img/sp_market.jpeg" alt="Foto da região" class="align-center">
+                </article>
+                <article>
+                    <p><strong>Opção 3 (menos preferível):</strong> De carro até a região do Autódromo.</p>
+                    <img src="img/laguinho.png" alt="Mapa do Autódromo" class="align-center">
+                </article>
+            </section>
+            <section id="telefones-uteis">
+                <h1>Telefones Úteis</h1>
+                <p>SAMU: <strong>192</strong></p>
+                <p>Polícia: <strong>190</strong></p>
+                <p>Bombeiros: <strong>193</strong></p>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/menu.js"></script>
+    <script src="js/language.js"></script>
+</body>
+</html>
