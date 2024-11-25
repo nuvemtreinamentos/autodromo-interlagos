@@ -3,11 +3,7 @@ const translations = {
     pt: {
         menu: {
             title: "Menu",
-            como_chegar: "Como Chegar",
-            onde_se_alimentar: "Onde se Alimentar",
-            onde_se_hospedar: "Onde se Hospedar",
-            zonas_de_risco: "Zonas de Risco",
-            telefones_uteis: "Telefones Úteis",
+            como_chegar: "Como Chegar"
         },
         content: {
             como_chegar: {
@@ -27,11 +23,7 @@ const translations = {
     es: {
         menu: {
             title: "Menú",
-            como_chegar: "Cómo Llegar",
-            onde_se_alimentar: "Dónde Comer",
-            onde_se_hospedar: "Dónde Hospedarse",
-            zonas_de_risco: "Zonas de Riesgo",
-            telefones_uteis: "Teléfonos Útiles",
+            como_chegar: "Cómo Llegar"
         },
         content: {
             como_chegar: {
@@ -51,11 +43,7 @@ const translations = {
     en: {
         menu: {
             title: "Menu",
-            como_chegar: "How to Get There",
-            onde_se_alimentar: "Where to Eat",
-            onde_se_hospedar: "Where to Stay",
-            zonas_de_risco: "Risk Zones",
-            telefones_uteis: "Useful Phones",
+            como_chegar: "How to Get There"
         },
         content: {
             como_chegar: {
@@ -82,10 +70,6 @@ function setLanguage(lang) {
     // Atualiza itens do menu
     const menuItems = document.querySelectorAll(".menu li");
     menuItems[3].textContent = translations[lang].menu.como_chegar;
-    menuItems[4].textContent = translations[lang].menu.onde_se_alimentar;
-    menuItems[5].textContent = translations[lang].menu.onde_se_hospedar;
-    menuItems[6].textContent = translations[lang].menu.zonas_de_risco;
-    menuItems[7].textContent = translations[lang].menu.telefones_uteis;
 
     // Atualiza conteúdo "Como Chegar"
     const comoChegarSection = translations[lang].content.como_chegar;
