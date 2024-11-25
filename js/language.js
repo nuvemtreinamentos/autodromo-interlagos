@@ -12,6 +12,10 @@ const translations = {
                 option2: "Opção 2: De carro até a estação Jurubatura, e de trem até a estação Autódromo.",
                 option3: "Opção 3 (menos preferível): De carro até a região do Autódromo.",
             },
+            parabens: 
+            {
+                title: "Parabéns, se você chegou até esse site, significa que você tem interesse em visitar o Autódromo de Interlagos em São Paulo. Neste site que é alimentado por moradores da região, você vai encontrar informações simplificadas de como visitar o Autódromo."
+            },
             telefones_uteis: {
                 title: "Telefones Úteis",
                 samu: "SAMU: 192",
@@ -31,6 +35,10 @@ const translations = {
                 option1: "Opción 1 (preferida): En tren hasta la estación Autódromo.",
                 option2: "Opción 2: En coche hasta la estación Jurubatura, y en tren hasta la estación Autódromo.",
                 option3: "Opción 3 (menos preferida): En coche hasta la región del Autódromo.",
+            },
+            parabens: 
+            {
+                title: "Felicitaciones, si has llegado a este sitio significa que tienes interés en visitar el Autódromo de Interlagos en São Paulo. En este sitio, que es mantenido por residentes de la región, encontrarás información simplificada sobre cómo visitar el Autódromo."
             },
             telefones_uteis: {
                 title: "Teléfonos Útiles",
@@ -52,6 +60,10 @@ const translations = {
                 option2: "Option 2: By car to Jurubatura station, then by train to Autódromo station.",
                 option3: "Option 3 (less preferable): By car to the Autódromo area.",
             },
+            parabens: 
+            {
+                title: "Congratulations, if you have reached this website, it means you are interested in visiting the Interlagos Racetrack in São Paulo. On this website, which is maintained by local residents, you will find simplified information on how to visit the racetrack."
+            },
             telefones_uteis: {
                 title: "Useful Phones",
                 samu: "SAMU: 192",
@@ -70,6 +82,10 @@ function setLanguage(lang) {
     // Atualiza itens do menu
     const menuItems = document.querySelectorAll(".menu li");
     menuItems[3].textContent = translations[lang].menu.como_chegar;
+
+    // Atualiza conteúdo "parabens"
+    const parabensSection = translations[lang].content.parabens;
+    document.querySelector("#parabens h1").textContent = parabensSection.title;
 
     // Atualiza conteúdo "Como Chegar"
     const comoChegarSection = translations[lang].content.como_chegar;
